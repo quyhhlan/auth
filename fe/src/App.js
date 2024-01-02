@@ -5,13 +5,6 @@ import Home from "./pages/Home";
 import { AppProvider } from "./context/appContext";
 
 function App() {
-  useEffect(() => {
-    (async () => {
-      const data = await axios.get("/api");
-      console.log(data);
-    })();
-  }, []);
-
   return (
     <AppProvider>
       <BrowserRouter>

@@ -18,7 +18,9 @@ export const AppProvider = ({ children }) => {
     try {
       const { data } = await api.post(`/auth/${endPoint}`, currentUser);
       console.log(data);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.response.data.errors);
+    }
   };
 
   return (

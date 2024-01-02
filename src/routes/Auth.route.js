@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import { register } from "../controller/authController.js";
+import { register } from "../controllers/Auth.controller.js";
 
 router.post("/register", register);
 
